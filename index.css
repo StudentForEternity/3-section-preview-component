@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  font-size: 0.9375rem;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+}
+
+h1,
+strong {
+  font-family: "Big Shoulders Display";
+  margin: 0;
+}
+
+img {
+  width: 55px;
+}
+
+img,
+.section-text,
+.section-link {
+  margin-bottom: 1.5em;
+}
+
+.section-title {
+  color: hsl(0, 0%, 95%);
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.section-text {
+  color: hsla(0, 0%, 100%, 0.699);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 300px;
+  background-color: black;
+  border-radius: 20px;
+}
+
+@media (min-width: 600px) {
+  .main-container {
+    justify-content: center;
+    grid-template-columns: repeat(3, 300px);
+  }
+
+  .section-link {
+    margin: 4em 0 0.5em 0;
+  }
+}
+.main-section {
+  padding: 2.5em;
+}
+
+.section-one {
+  background-color: hsl(31, 77%, 52%);
+}
+.section-two {
+  background-color: hsl(184, 100%, 22%);
+}
+.section-three {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.section-link {
+  display: inline-block;
+  background-color: hsl(0, 0%, 95%);
+  padding: 0.75em 1.5em;
+  text-decoration: none;
+  text-align: center;
+  color: hsl(31, 77%, 52%);
+  border-radius: 30px;
+  border: 2px solid;
+}
+
+.section-one > .section-link {
+  color: hsl(31, 77%, 52%);
+}
+.section-one > .section-link:hover,
+.section-one > .section-link:focus {
+  background-color: hsl(31, 77%, 52%);
+}
+.section-two > .section-link {
+  color: hsl(184, 100%, 22%);
+}
+.section-two > .section-link:hover,
+.section-two > .section-link:focus {
+  background-color: hsl(184, 100%, 22%);
+}
+.section-three > .section-link {
+  color: hsl(179, 100%, 13%);
+}
+
+.section-three > .section-link:hover,
+.section-three > .section-link:focus {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.section-one > .section-link:hover,
+.section-one > .section-link:focus,
+.section-two > .section-link:hover,
+.section-two > .section-link:focus,
+.section-three > .section-link:hover,
+.section-three > .section-link:focus {
+  border: 2px solid hsl(0, 0%, 95%);
+  color: hsl(0, 0%, 95%);
+}
