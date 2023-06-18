@@ -65,12 +65,23 @@ img,
 
 .section-one {
   background-color: hsl(31, 77%, 52%);
+  border-radius: 15px 15px 0 0;
 }
 .section-two {
   background-color: hsl(184, 100%, 22%);
 }
 .section-three {
   background-color: hsl(179, 100%, 13%);
+  border-radius: 0 0 15px 15px;
+}
+
+@media (min-width: 600px) {
+  .section-one {
+    border-radius: 15px 0 0 15px;
+  }
+  .section-three {
+    border-radius: 0px 15px 15px 0;
+  }
 }
 
 .section-link {
